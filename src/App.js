@@ -1,7 +1,8 @@
-import { useState from 'react';
+import { nanoid } from 'nanoid';
+import { useState } from 'react';
 import listNotes from './components/listNotes';
 const App = () => {
-    const [note, setNote] = useState([{ noteText: "Edit the note!", date:"");
+    const [note, setNote] = useState([{ noteId: nanoid(),  noteText: "Edit the note!", noteDate:""}]);
     return (<div className="containNotes">
         <listNotes />
         </div>;
