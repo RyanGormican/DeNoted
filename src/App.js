@@ -21,11 +21,15 @@ const App = () => {
     const newList = note.filter((note)=> note.noteId !== noteId);   
     setNote(newList);
   };
-    return (<div className="containNotes">
+    return (
+        
+    <div className={''}>  
+        <div className="containNotes">
         <noteHeader toggleDarkMode={setDarkMode}/>   
         <searchNotes setSearch={setSearch}/>
         <listNotes theNotes={note.filter((note)=> note.noteText.toLowerCase().includes(search))} addtheNote={addNote} removetheNote={removeNote}/>
-        </div>;
+        </div>
+</div>
   );
 
 
