@@ -8,7 +8,7 @@ const App = () => {
     const [darkMode, setdarkMode] = useState(false);
   useEffect(() => {
       localStorage.setItem('denoted-data', JSON.stringify(note));
-  }, [note]_)
+  }, [note]);
     
     const addNote = (note) => {
         const date = new Date();
