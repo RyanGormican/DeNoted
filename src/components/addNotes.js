@@ -18,8 +18,8 @@ const addNotes = ({ addtheNote }) => {
  return (<div className='notes add'>
          <textarea rows='8' cols='10' placeholder='Type your new note here...' value={notesText} onChange={noteEdit}>
          </textarea>
-         <div className="footnotes"
-         <small>{noteCount - notesText.length} characters left </small>
+         <div className='footnotes'>
+         <small> {noteCount - notesText.length} characters left </small>
          <button className="saveNote" onClick ={saveNote}> Save</button>
          </div>) ;
 };
