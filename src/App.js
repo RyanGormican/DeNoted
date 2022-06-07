@@ -20,7 +20,7 @@ const App = () => {
         const date = new Date();
         const newNote = {
             noteId: nanoid(),
-            noteText note,
+            noteText: note,
             noteDate: date.toLocaleDateString();
     }
     const newList = [...note, newNote];
