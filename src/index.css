@@ -14,6 +14,12 @@ code {
 .deletenotes {
 cursor: pointer;	
 }
+.footnotes
+{
+justify-content: space-between;
+display: flex;
+align-items: center;
+}
 .listnotes{
 	grid-gap: 1rem;
 	display: grid;
