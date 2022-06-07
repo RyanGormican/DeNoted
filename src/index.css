@@ -56,7 +56,10 @@ align-items: center;
 	border: none;
 	
 }
-
+.saveNote:hover {
+	cursor: pointer;
+	background-color: #ededed;
+}
 textarea {
 	background-color: #32CD32;
 	border: none;
