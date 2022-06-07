@@ -68,6 +68,14 @@ align-items: center;
 	padding: 5px;
 	margin-bottom: 1.5em;
 }
+.searchNotes input{
+	background-color: rgb(233, 233, 233);
+	border: none;
+	width: 100%;
+}
+.searchNotes input:focus{
+	outline: none;
+}
 
 textarea {
 	background-color: #32CD32;
