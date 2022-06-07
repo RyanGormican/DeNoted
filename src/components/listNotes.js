@@ -1,3 +1,4 @@
+import denoteNote from './Note';
 const listNotes = () => {
   return (
     <div className='listnotes'>
