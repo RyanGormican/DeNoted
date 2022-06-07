@@ -25,19 +25,22 @@ const App = () => {
             noteDate: date.toLocaleDateString(),
     };
     const newList = [...notes, newNote];
-    setNote(newList);
+    setNotes(newList);
     };
 
   const removeNote = (noteId) => {
     const newList = notes.filter((note)=> note.noteId !== noteId);   
-    setNote(newList);
+    setNotes(newList);
   };
     return (
         
     <div className={`${darkMode && 'setdarkMode'}`}>  
         <div className='containNotes'>
         <NoteHeader toggleDarkMode={setdarkMode} />   
-        <ListNotes theNotes={notes} addtheNote={addNote} removetheNote={removeNote} />
+        <SearchNotes setSearch={setSearch} />
+        <ListNotes theNotes={notes.filter((note) =>
+						note.text.toLowerCase().includes(search)
+					)} addtheNote={addNote} removetheNote={removeNote} />
         </div>
 </div>
   );
