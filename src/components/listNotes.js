@@ -1,8 +1,8 @@
 import denoteNote from './Note';
-const listNotes = () => {
+const listNotes = ({ theNotes }) => {
   return (
     <div className='listnotes'>
-      <denoteNote />
+    {theNotes.map((note)=>   <denoteNote />)}
     </div>;
     )
 }
