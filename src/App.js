@@ -4,7 +4,7 @@ import listNotes from './components/listNotes';
 const App = () => {
     const [note, setNote] = useState([{ noteId: nanoid(),  noteText: "Edit the note!", noteDate:""}]);
     return (<div className="containNotes">
-        <listNotes />
+        <listNotes theNotes={note}/>
         </div>;
   );
 
