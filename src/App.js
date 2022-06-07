@@ -1,6 +1,7 @@
 import { nanoid } from 'nanoid';
 import { useState } from 'react';
 import listNotes from './components/listNotes';
+import searchNotes from './components/searchNotes';
 const App = () => {
     const [note, setNote] = useState([{ noteId: nanoid(),  noteText: "Edit the note!", noteDate:""}]);
     
@@ -19,6 +20,7 @@ const App = () => {
     setNote(newList);
   }
     return (<div className="containNotes">
+        <searchNotes />
         <listNotes theNotes={note} addtheNote={addNote} removetheNote={removeNote}/>
         </div>;
   );
