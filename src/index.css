@@ -49,4 +49,12 @@ align-items: center;
 .notes.add {
 	background-color: EE4B2B;
 }
+.saveNote {
+	border-radius: 15px;
+	padding: 5px 10px 5px 10px;
+	background-color: #e1e1e1;
+	border: none;
+	
+}
+
 	
