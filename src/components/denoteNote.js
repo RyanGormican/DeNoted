@@ -1,5 +1,5 @@
 import { TiDelete } from 'react-icons/md';
-const denoteNote = ({ noteId, noteText, noteDate }) => {
+const denoteNote = ({ noteId, noteText, noteDate, removetheNote }) => {
   return(
     <div className='notes'>
     <span> {noteText } </span>
