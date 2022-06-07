@@ -57,4 +57,10 @@ align-items: center;
 	
 }
 
+textarea {
+	background-color: #32CD32;
+	border: none;
+	resize: none;
+}
+
 	
