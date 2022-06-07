@@ -25,6 +25,8 @@ code {
 	display: flex;
 	background-color: #08ecff;
 	border-radius: 10px;
+	justify-content: space-between;
+	white-space: pre-wrap;
 
 }	
 	
