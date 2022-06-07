@@ -1,3 +1,4 @@
+import { useState from 'react';
 import listNotes from './components/listNotes';
 const App = () => {
     const [note, setNote] = useState();
