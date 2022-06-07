@@ -1,9 +1,9 @@
 import React from 'react';
-const noteHeader = () => {
+const noteHeader = ({ toggleDarkMode }) => {
     return (
     <div className="header">
     <h1>DeNoted</h1>
-    <button className='saveNote'> Dark Mode </button>
+    <button onClick={()=> toggleDarkMode((previousDarkmode)=> )}className='saveNote'> Dark Mode </button>
     </div>
     )
     }
