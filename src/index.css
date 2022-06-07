@@ -28,6 +28,11 @@ justify-content: space-between;
 display: flex;
 align-items: center;
 }
+.header {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
 .listnotes{
 	grid-gap: 1rem;
 	display: grid;
@@ -76,7 +81,12 @@ align-items: center;
 .searchNotes input:focus{
 	outline: none;
 }
-
+.setdarkMode{
+background-color:#121212;	
+}
+.setdarkMode h1{
+color: white;	
+}
 textarea {
 	background-color: #32CD32;
 	border: none;
