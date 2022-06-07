@@ -5,7 +5,7 @@ const denoteNote = ({ noteId, noteText, noteDate, removetheNote }) => {
     <span> {noteText } </span>
     <div className='footnotes'>
       <small> {noteDate} </small>
-    <TiDelete className= 'deletenotes' size='1.3em' />
+    <TiDelete onClick={() => removetheNote(noteId)} className='deletenotes' size='1.3em' />
     </div>
     
     </div>;
