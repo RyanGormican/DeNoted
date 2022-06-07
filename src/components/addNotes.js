@@ -1,5 +1,5 @@
 import { useState } from 'react';
-const addNotes = () => {
+const addNotes = ({ addtheNote }) => {
      const [notesText, setnotesText] = useState('');
  const noteEdit = (event) => {
   setnotesText(event.target.value);
