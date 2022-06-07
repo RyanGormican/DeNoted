@@ -3,8 +3,11 @@ const addNotes = ({ addtheNote }) => {
      const [notesText, setnotesText] = useState('');
      const noteCount = 250; 
  const noteEdit = (event) => {
+  if(noteCount -event.target.value.length >=0)
+  {
   setnotesText(event.target.value);
- }
+  }
+  }
  const saveNote = () => {
       if(notesText.trim().length > 0)
       {
