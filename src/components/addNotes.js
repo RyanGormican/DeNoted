@@ -4,5 +4,7 @@ const addNotes = () => {
          </textarea>
          <div className="footnotes"
          <small> </small>
+         <button className="saveNote"> Save</button>
          </div>) ;
 };
+export default addNotes;
