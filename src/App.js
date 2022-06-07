@@ -1,6 +1,6 @@
 
 const App = () => {
-    return <div className="containNotes" </p>;
+    return <div className="containNotes" </div>;
   );
 
 
