@@ -1,6 +1,7 @@
 import listNotes from './components/listNotes';
 const App = () => {
-    return <div className="containNotes">
+    const [note, setNote] = useState();
+    return (<div className="containNotes">
         <listNotes />
         </div>;
   );
