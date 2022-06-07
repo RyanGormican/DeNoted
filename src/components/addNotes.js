@@ -8,6 +8,7 @@ const addNotes = ({ addtheNote }) => {
       if(notesText.trim().length > 0)
       {
       addtheNote(notesText);
+      setnotesText('');
       }
   }
  return (<div className='notes add'>
