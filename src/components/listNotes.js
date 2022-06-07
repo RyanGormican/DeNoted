@@ -6,7 +6,7 @@ const listNotes = ({ theNotes, addtheNote, removetheNote }) => {
     {theNotes.map((note)=>   <denoteNote noteId={note.noteId} noteText={note.noteText} noteDate={note.noteDate}removetheNote={removetheNote} />)}
   
 <addNotes addtheNote={addtheNote}/>
-</div>;
-    )
-}
+</div>
+    );
+};
 export default listNotes;
