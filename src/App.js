@@ -1,11 +1,15 @@
 import { nanoid } from 'nanoid';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import listNotes from './components/listNotes';
 import searchNotes from './components/searchNotes';
 const App = () => {
     const [note, setNote] = useState([{ noteId: nanoid(),  noteText: "", noteDate:""}]);
     const [search,setSearch] = useState(''); 
     const [darkMode, setdarkMode] = useState(false);
+  useEffect(() => {
+      localStorage.setItem('denoted-data', JSON.stringify(note));
+  }, []_)
+    
     const addNote = (note) => {
         const date = new Date();
         const newNote = {
