@@ -20,7 +20,7 @@ const AddNotes = ({ addtheNote }) => {
          </textarea>
          <div className='footnotes'>
          <small> {noteCount - notesText.length} characters left </small>
-         <button className="saveNote" onClick ={saveNote}> Save</button>
+         <button className='saveNote' onClick ={saveNote}> Save</button>
          </div>
          </div>
 );
