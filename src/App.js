@@ -4,7 +4,7 @@ import ListNotes from './components/ListNotes';
 import SearchNotes from './components/SearchNotes';
 import NoteHeader from './components/NoteHeader';
 const App = () => {
-    const [note, setNote] = useState([{ noteId: nanoid(),  noteText:"Welcome to DeNoted!", noteDate:"06/07/2022"}]);
+    const [note, setNote] = useState([{ noteId: nanoid(),  noteText:'Welcome to DeNoted!', noteDate:'06/07/2022'}]);
     const [search,setSearch] = useState(''); 
     const [darkMode, setdarkMode] = useState(false);
   useEffect(() => {
