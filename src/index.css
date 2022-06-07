@@ -11,6 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.containNotes {
+	padding-right: 15px;
+	padding-left: 15px;
+	min-height: 100vh;
+	max-width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+}
 .deletenotes {
 cursor: pointer;	
 }
@@ -38,5 +46,5 @@ align-items: center;
 	white-space: pre-wrap;
 
 }	
-	
+
 	
