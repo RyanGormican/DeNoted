@@ -35,7 +35,7 @@ const App = () => {
         
     <div className={`${darkMode && 'setdarkMode'}`}>  
         <div className="containNotes">
-        <noteHeader toggleDarkMode={setDarkMode}/>   
+        <noteHeader toggleDarkMode={setdarkMode}/>   
         <searchNotes setSearch={setSearch}/>
         <listNotes theNotes={note.filter((note)=> note.noteText.toLowerCase().includes(search))} addtheNote={addNote} removetheNote={removeNote}/>
         </div>
