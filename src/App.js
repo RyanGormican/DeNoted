@@ -15,7 +15,8 @@ const App = () => {
     setNote(newList);
     };
   const removeNote = (noteId) => {
-    note.filter((note)=> note.noteId !== noteId);   
+    const newList = note.filter((note)=> note.noteId !== noteId);   
+    setNote(newList);
   }
     return (<div className="containNotes">
         <listNotes theNotes={note} addtheNote={addNote}/>
