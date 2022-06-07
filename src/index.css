@@ -60,6 +60,14 @@ align-items: center;
 	cursor: pointer;
 	background-color: #ededed;
 }
+.searchNotes{
+	align-items: center;	
+	display: flex;
+	background-color: rgb(233, 233, 233);
+	
+
+}
+
 textarea {
 	background-color: #32CD32;
 	border: none;
