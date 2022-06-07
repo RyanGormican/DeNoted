@@ -1,7 +1,7 @@
 const listNotes = () => {
   return (
     <div className="listnotes">
-    
+      <denoteNote />
     </div>;
     )
 }
