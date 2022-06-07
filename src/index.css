@@ -45,14 +45,14 @@ align-items: center;
 	padding: 1rem;
 	min-height: 170px;
 	display: flex;
-	background-color: #32CD32;
+	background-color: #f2faf2;
 	border-radius: 10px;
 	justify-content: space-between;
 	white-space: pre-wrap;
 
 }	
 .notes.add {
-	background-color: EE4B2B;
+	background-color: #d4cdcb;
 }
 .saveNote {
 	border-radius: 15px;
@@ -88,7 +88,7 @@ background-color:#121212;
 color: white;	
 }
 textarea {
-	background-color: #32CD32;
+	background-color: #f2faf2;
 	border: none;
 	resize: none;
 }
