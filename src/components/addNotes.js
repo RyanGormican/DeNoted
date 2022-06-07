@@ -1,6 +1,7 @@
 import { useState } from 'react';
 const addNotes = ({ addtheNote }) => {
      const [notesText, setnotesText] = useState('');
+     const noteCount = 250; 
  const noteEdit = (event) => {
   setnotesText(event.target.value);
  }
@@ -15,7 +16,7 @@ const addNotes = ({ addtheNote }) => {
          <textarea rows='8' cols='10' placeholder='Type your new note here... value={notesText} onChange={noteEdit}]
          </textarea>
          <div className="footnotes"
-         <small> </small>
+         <small>{noteCount - notesText.length} characters left </small>
          <button className="saveNote" onClick ={saveNote}> Save</button>
          </div>) ;
 };
