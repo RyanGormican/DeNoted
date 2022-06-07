@@ -5,7 +5,7 @@ import searchNotes from './components/searchNotes';
 const App = () => {
     const [note, setNote] = useState([{ noteId: nanoid(),  noteText: "", noteDate:""}]);
     const [search,setSearch] = useState(''); 
-    const [darkMode, setDarkMode] = useState(false);
+    const [darkMode, setdarkMode] = useState(false);
     const addNote = (note) => {
         const date = new Date();
         const newNote = {
