@@ -8,7 +8,7 @@ const App = () => {
         
     }
     return (<div className="containNotes">
-        <listNotes theNotes={note}/>
+        <listNotes theNotes={note} addtheNote={addNote}/>
         </div>;
   );
 
