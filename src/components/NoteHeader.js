@@ -7,4 +7,4 @@ const NoteHeader = ({ toggleDarkMode }) => {
     </div>
     )
     }
-    export default MoteHeader;
+    export default NoteHeader;
