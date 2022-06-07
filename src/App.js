@@ -11,7 +11,8 @@ const App = () => {
             noteText note,
             noteDate: date.toLocaleDateString();
     }
-    const newNotes = [...note, newNote];
+    const newList = [...note, newNote];
+    setNote(newList);
     };
     return (<div className="containNotes">
         <listNotes theNotes={note} addtheNote={addNote}/>
