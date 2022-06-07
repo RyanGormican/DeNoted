@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import listNotes from './components/listNotes';
 import searchNotes from './components/searchNotes';
 const App = () => {
-    const [note, setNote] = useState([{ noteId: nanoid(),  noteText:"", noteDate:""}]);
+    const [note, setNote] = useState([{ noteId: nanoid(),  noteText:"Welcome to DeNoted!", noteDate:"06/07/2022"}]);
     const [search,setSearch] = useState(''); 
     const [darkMode, setdarkMode] = useState(false);
   useEffect(() => {
