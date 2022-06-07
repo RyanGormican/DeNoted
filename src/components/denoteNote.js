@@ -2,9 +2,9 @@ import { TiDelete } from 'react-icons/md';
 const denoteNote = ({ noteId, noteText, noteDate }) => {
   return(
     <div className='notes'>
-    <span> </span>
+    <span> {noteText } </span>
     <div className='footnotes'>
-      <small> </small>
+      <small> {noteDate} </small>
     <TiDelete className= 'deletenotes' size='1.3em' />
     </div>
     
