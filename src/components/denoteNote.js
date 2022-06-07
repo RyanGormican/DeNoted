@@ -5,7 +5,7 @@ const denoteNote = ({ noteId, noteText, noteDate, removetheNote }) => {
     <span> {noteText } </span>
     <div className='footnotes'>
       <small> {noteDate} </small>
-    <Button onClick={() => removetheNote(noteId)} className='deletenotes' size='1.3em' > X </Button>
+    <button onClick={() => removetheNote(noteId)} className='deletenotes' size='1.3em' > X </button>
     </div>
     
     </div>
