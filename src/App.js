@@ -4,7 +4,7 @@ import listNotes from './components/listNotes';
 import searchNotes from './components/searchNotes';
 const App = () => {
     const [note, setNote] = useState([{ noteId: nanoid(),  noteText: "Edit the note!", noteDate:""}]);
-    
+    const [search,setSearch] = useState('');    
     const addNote = (note) => {
         const date = new Date();
         const newNote = {
@@ -15,12 +15,13 @@ const App = () => {
     const newList = [...note, newNote];
     setNote(newList);
     };
+
   const removeNote = (noteId) => {
     const newList = note.filter((note)=> note.noteId !== noteId);   
     setNote(newList);
   }
     return (<div className="containNotes">
-        <searchNotes />
+        <searchNotes setSearch={setSearch}/>
         <listNotes theNotes={note} addtheNote={addNote} removetheNote={removeNote}/>
         </div>;
   );
