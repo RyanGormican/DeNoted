@@ -3,7 +3,7 @@ import { useState } from 'react';
 import listNotes from './components/listNotes';
 import searchNotes from './components/searchNotes';
 const App = () => {
-    const [note, setNote] = useState([{ noteId: nanoid(),  noteText: "Edit the note!", noteDate:""}]);
+    const [note, setNote] = useState([{ noteId: nanoid(),  noteText: "", noteDate:""}]);
     const [search,setSearch] = useState('');    
     const addNote = (note) => {
         const date = new Date();
