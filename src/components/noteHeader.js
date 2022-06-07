@@ -3,7 +3,7 @@ const noteHeader = ({ toggleDarkMode }) => {
     return (
     <div className="header">
     <h1>DeNoted</h1>
-    <button onClick={()=> toggleDarkMode((previousDarkmode)=> !previousDarkmode)}className='saveNote'> Dark Mode </button>
+    <button onClick={()=> toggleDarkMode((previousdarkMode)=> !previousdarkMode)}className='saveNote'> Dark Mode </button>
     </div>
     )
     }
