@@ -8,8 +8,8 @@ const denoteNote = ({ noteId, noteText, noteDate, removetheNote }) => {
     <TiDelete onClick={() => removetheNote(noteId)} className='deletenotes' size='1.3em' />
     </div>
     
-    </div>;
-    )
-}
+    </div>
+    );
+};
 
-export defaulte denoteNote;
+export default denoteNote;
