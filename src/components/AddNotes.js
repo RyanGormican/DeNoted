@@ -1,5 +1,5 @@
 import { useState } from 'react';
-const addNotes = ({ addtheNote }) => {
+const AddNotes = ({ addtheNote }) => {
      const [notesText, setnotesText] = useState('');
      const noteCount = 250; 
  const noteEdit = (event) => {
@@ -25,4 +25,4 @@ const addNotes = ({ addtheNote }) => {
          </div>
 );
 };
-export default addNotes;
+export default AddNotes;
