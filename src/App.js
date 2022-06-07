@@ -12,7 +12,7 @@ const App = () => {
     if (getNotes){
      setNote(getNotes);   
     }
-  },[])
+  },[]);
   useEffect(() => {
       localStorage.setItem('denoted-data', JSON.stringify(note));
   }, [note]);
