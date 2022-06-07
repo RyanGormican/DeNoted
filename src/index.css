@@ -12,14 +12,17 @@ code {
     monospace;
 }
 .listnotes{
-	display: grid;
 	grid-gap: 1rem;
+	display: grid;
 	grid-template-columns: repeat(
 		auto-fill,
 		minmax(200px, 1fr)
 	);
 }
 .notes {
+	padding: 1rem;
+	min-height: 170px;
+	display: flex;
 	background-color: #08ecff;
 	border-radius: 10px;
 
