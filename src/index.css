@@ -46,5 +46,7 @@ align-items: center;
 	white-space: pre-wrap;
 
 }	
-
+.note.add {
+	background-color: EE4B2B;
+}
 	
