@@ -7,6 +7,12 @@ const App = () => {
     const [search,setSearch] = useState(''); 
     const [darkMode, setdarkMode] = useState(false);
   useEffect(() => {
+      const getNotes = JSON.parse(localStorage.getItem('denoted-data'));
+    if (getNotes){
+     setNote(getNotes);   
+    }
+  },[])
+  useEffect(() => {
       localStorage.setItem('denoted-data', JSON.stringify(note));
   }, [note]);
     
