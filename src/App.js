@@ -21,8 +21,8 @@ const App = () => {
         const newNote = {
             noteId: nanoid(),
             noteText: note,
-            noteDate: date.toLocaleDateString();
-    }
+            noteDate: date.toLocaleDateString(),
+    };
     const newList = [...note, newNote];
     setNote(newList);
     };
