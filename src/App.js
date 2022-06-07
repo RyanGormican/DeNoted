@@ -19,7 +19,7 @@ const App = () => {
     setNote(newList);
   }
     return (<div className="containNotes">
-        <listNotes theNotes={note} addtheNote={addNote}/>
+        <listNotes theNotes={note} addtheNote={addNote} removetheNote={removeNote}/>
         </div>;
   );
 
