@@ -11,7 +11,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-listnotes{
+.listnotes{
 	display: grid;
 	grid-gap: 1rem;
 	grid-template-columns: repeat(
@@ -19,3 +19,10 @@ listnotes{
 		minmax(200px, 1fr)
 	);
 }
+.notes {
+	background-color: #08ecff;
+	border-radius: 10px;
+
+}	
+	
+	
