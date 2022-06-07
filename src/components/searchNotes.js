@@ -1,6 +1,6 @@
 import React from 'react';
 // import { MDSearch } from "react-icons/md";
-const searchNotes =({ setSearch }) = {
+const searchNotes =({ setSearch }) => {
    return
    (
    <div className='searchNotes'>
