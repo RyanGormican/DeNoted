@@ -22,7 +22,7 @@ const App = () => {
   }
     return (<div className="containNotes">
         <searchNotes setSearch={setSearch}/>
-        <listNotes theNotes={note} addtheNote={addNote} removetheNote={removeNote}/>
+        <listNotes theNotes={note.filter((note)=> note.noteText.toLowerCase().includes(search))} addtheNote={addNote} removetheNote={removeNote}/>
         </div>;
   );
 
