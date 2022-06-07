@@ -3,7 +3,7 @@ const noteHeader = () => {
     return (
     <div className="header">
     <h1>DeNoted</h1>
-    <button> Dark Mode </button>
+    <button className='saveNote'> Dark Mode </button>
     </div>
     )
     }
