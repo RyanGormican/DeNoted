@@ -1,7 +1,7 @@
 import { nanoid } from 'nanoid';
 import { useEffect, useState } from 'react';
-import listNotes from './components/listNotes';
-import searchNotes from './components/searchNotes';
+import ListNotes from './components/ListNotes';
+import SearchNotes from './components/SearchNotes';
 const App = () => {
     const [note, setNote] = useState([{ noteId: nanoid(),  noteText:"Welcome to DeNoted!", noteDate:"06/07/2022"}]);
     const [search,setSearch] = useState(''); 
@@ -35,9 +35,9 @@ const App = () => {
         
     <div className={`${darkMode && 'setdarkMode'}`}>  
         <div className="containNotes">
-        <noteHeader toggleDarkMode={setdarkMode}/>   
-        <searchNotes setSearch={setSearch}/>
-        <listNotes theNotes={note.filter((note)=> note.noteText.toLowerCase().includes(search))} addtheNote={addNote} removetheNote={removeNote}/>
+        <NoteHeader toggleDarkMode={setdarkMode}/>   
+        <SearchNotes setSearch={setSearch}/>
+        <ListNotes theNotes={note.filter((note)=> note.noteText.toLowerCase().includes(search))} addtheNote={addNote} removetheNote={removeNote}/>
         </div>
 </div>
   );
