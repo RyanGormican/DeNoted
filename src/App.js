@@ -21,7 +21,7 @@ const App = () => {
     var darkvalue = "false";
       if (darkMode)
       {
-        darkvalue = "true";
+     var darkvalue = "true";
       }
       localStorage.setItem('denoted-data', JSON.stringify(notes));
       localStorage.setItem('denoted-data-darkmode', JSON.stringify(darkvalue));
