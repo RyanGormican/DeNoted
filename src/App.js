@@ -6,7 +6,7 @@ import NoteHeader from './components/NoteHeader';
 const App = () => {
     const [notes, setNotes] = useState([{ noteId: nanoid(),  noteText:'Welcome to DeNoted!', noteDate:'06/07/2022'}]);
     const [search, setSearch] = useState(''); 
-    const [darkMode, setdarkMode] = useState(false);
+    const [darkMode, setdarkMode] = useState('');
   useEffect(() => {
       const getNotes = JSON.parse(localStorage.getItem('denoted-data'));
       const getDark = JSON.parse(localStorage.getItem('denoted-data-darkmode'));
