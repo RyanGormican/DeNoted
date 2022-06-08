@@ -19,7 +19,7 @@ const App = () => {
   },[]);
   useEffect(() => {
     var darkvalue = "false";
-      if (darkMode)
+      if (darkMode === true)
       {
      var darkvalue = "true";
       }
