@@ -3,10 +3,13 @@ import { useEffect, useState } from 'react';
 import ListNotes from './components/ListNotes';
 import SearchNotes from './components/SearchNotes';
 import NoteHeader from './components/NoteHeader';
+
+
+const Changed = false;
 const App = () => {
     const [notes, setNotes] = useState([{ noteId: nanoid(),  noteText:'Welcome to DeNoted!', noteDate:'06/07/2022'}]);
     const [search, setSearch] = useState(''); 
-    const [darkMode, setdarkMode] = useState('');
+    const [darkMode, setdarkMode] = useState(Changed);
   useEffect(() => {
       const getNotes = JSON.parse(localStorage.getItem('denoted-data'));
       const getDark = JSON.parse(localStorage.getItem('denoted-data-darkmode'));
@@ -15,6 +18,7 @@ const App = () => {
     }
     if (getDark === true){
     setdarkMode(true);  
+     Changed = true; 
     }
   },[]);
   useEffect(() => {
