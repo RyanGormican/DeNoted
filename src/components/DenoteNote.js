@@ -1,6 +1,6 @@
 const DenoteNote = ({ noteId, noteText, noteDate, removetheNote }) => {
   return(
-    <div className='notes' id='{noteId}'>
+    <div className='notes' id={noteId}>
     <span> {noteText } </span>
     <div className='footnotes'>
       <small> {noteDate} </small>
