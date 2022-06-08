@@ -18,15 +18,16 @@ const App = () => {
     }
   },[]);
   useEffect(() => {
+      localStorage.setItem('denoted-data', JSON.stringify(notes));
+  }, [notes]);
+      useEffect(() => {
     var darkvalue = "false";
       if (darkMode === true)
       {
      var darkvalue = "true";
       }
-      localStorage.setItem('denoted-data', JSON.stringify(notes));
       localStorage.setItem('denoted-data-darkmode', JSON.stringify(darkvalue));
-  }, [notes],[darkMode]);
-    
+  }, [darkMode]);
     const addNote = (note) => {
         const date = new Date();
         const newNote = {
