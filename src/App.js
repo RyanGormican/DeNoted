@@ -9,7 +9,7 @@ const App = () => {
     const [darkMode, setdarkMode] = useState(false);
   useEffect(() => {
       const getNotes = JSON.parse(localStorage.getItem('denoted-data'));
-      const getDark = JSON.parse(localStorage.getItem('denoted-data-darkmode'));
+      const getDark = localStorage.getItem('denoted-data-darkmode');
     if (getNotes){
      setNotes(getNotes);   
     }
@@ -19,7 +19,7 @@ const App = () => {
   },[]);
   useEffect(() => {
       localStorage.setItem('denoted-data', JSON.stringify(notes));
-      localStorage.setItem('denoted-data-darkmode', JSON.stringify(darkMode));
+      localStorage.setItem('denoted-data-darkmode', (darkMode));
   }, [notes],[darkMode]);
     
     const addNote = (note) => {
