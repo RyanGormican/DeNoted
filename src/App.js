@@ -14,7 +14,7 @@ const App = () => {
      setNotes(getNotes);   
     }
     if (getDark === true){
-    setdarkMode(getDark);  
+    setdarkMode(true);  
     }
   },[]);
   useEffect(() => {
