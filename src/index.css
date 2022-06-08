@@ -49,7 +49,7 @@ align-items: center;
 	border-radius: 10px;
 	justify-content: space-between;
 	white-space: pre-wrap;
-
+	flex-direction: column;
 }	
 .notes.add {
 	background-color: #d4cdcb;
