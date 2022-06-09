@@ -7,6 +7,7 @@ const DenoteNote = ({ noteId, noteText, noteDate, noteColor, removetheNote,setNo
        {
         var newColor = '"' +  event.target.value + '"';
     return{...note,noteColor: newColor};
+         console.log(newColor);
        }
     return note;
   });
