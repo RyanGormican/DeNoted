@@ -87,6 +87,9 @@ background-color:#121212;
 .setdarkMode h1{
 color: white;	
 }
+span{
+overflow-wrap: break-word;
+}
 textarea {
 	background-color: #d4cdcb;
 	border: none;
