@@ -4,7 +4,7 @@ const DenoteNote = ({ noteId, noteText, noteDate, noteColor, removetheNote,setNo
   }
   var noteColors = {noteColor};
   const theColor = {
-  background-color:' ' + noteColors + ' ';
+  background-color:' ' + noteColors + ' ',
 };
   return(
     <div className='notes' id={noteId} style={theColor}>
