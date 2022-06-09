@@ -1,6 +1,7 @@
 const DenoteNote = ({ noteId, noteText, noteDate, noteColor, removetheNote,setNotes, theNotes,}) => {
   var id = {noteId};
   const changeColor = (event) => {
+    console.log(event.target.value);
     setNotes(prevState => {
   const updColor = theNotes.map(note => {
     if(note.noteId === id )
@@ -19,7 +20,7 @@ const DenoteNote = ({ noteId, noteText, noteDate, noteColor, removetheNote,setNo
     <span> {noteText } </span>
     <div className='footnotes'>
       <small> {noteDate} </small>
-     <input type="color" onChange={changeColor} id="noteColorS" name="noteColor"  placeholder={noteColor} />
+     <input type="color" onChange={changeColor} id="noteColorS" name="noteColor"  />
     <button onClick={() => removetheNote(noteId)} className='deletenotes' size='1.3em' > X </button>
     </div>
     
