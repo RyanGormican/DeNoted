@@ -2,8 +2,9 @@ const DenoteNote = ({ noteId, noteText, noteDate, noteColor, removetheNote,setNo
   const changeColor = (event) => {
    setNotes({noteColor: event.target.value});
   }
+  var noteColors = {noteColor};
   const theColor = {
-  background-color:'noteColor';
+  background-color:noteColors;
 };
   return(
     <div className='notes' id={noteId} style={theColor}>
