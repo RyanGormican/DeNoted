@@ -58,7 +58,7 @@ const App = () => {
     <div className={`${darkMode && 'setdarkMode'}`}>  
         <div className='containNotes'>
         <NoteHeader toggleDarkMode={setdarkMode} />   
-        <ListNotes theNotes={notes} addtheNote={addNote} removetheNote={removeNote} />
+        <ListNotes theNotes={notes} addtheNote={addNote} removetheNote={removeNote} setNotes={setNotes} />
         </div>
 </div>
   );
