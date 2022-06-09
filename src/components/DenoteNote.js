@@ -1,7 +1,7 @@
 const DenoteNote = ({ noteId, noteText, noteDate, noteColor, removetheNote,setNotes, theNotes,}) => {
   const changeColor = (event) => {
   const updColor = theNotes.map(note => {
-    if(note.noteId === {noteId))
+    if(note.noteId === {noteId})
        {
     setNotes(...note,{noteColor: event.target.value});
        }
