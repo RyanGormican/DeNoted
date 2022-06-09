@@ -1,8 +1,8 @@
 const DenoteNote = ({ noteId, noteText, noteDate, noteColor, removetheNote,setNotes, }) => {
   const changeColor = (event) => {
-    noteIds = {noteId};
-    noteTexts = {noteText};
-    noteDates = {noteDate};
+    var noteIds = {noteId};
+     var noteTexts = {noteText};
+     var noteDates = {noteDate};
    setNotes({noteId: noteIds, noteText: noteTexts, noteDate: noteDates, noteColor: event.target.value});
   }
   var noteColors = {noteColor};
