@@ -20,7 +20,7 @@ const DenoteNote = ({ noteId, noteText, noteDate, noteColor, removetheNote,setNo
     <span> {noteText } </span>
     <div className='footnotes'>
       <small> {noteDate} </small>
-     <input type="color" onChange={changeColor} id="noteColorS" name="noteColor"  />
+     <input type="color" onChange={changeColor} id="noteColorS" name="noteColor"  value={noteColor}/>
     <button onClick={() => removetheNote(noteId)} className='deletenotes' size='1.3em' > X </button>
     </div>
     
