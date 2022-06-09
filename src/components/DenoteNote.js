@@ -1,4 +1,4 @@
-const DenoteNote = ({ noteId, noteText, noteDate, noteColor, removetheNote,setNotes }) => {
+const DenoteNote = ({ noteId, noteText, noteDate, noteColor, removetheNote,setNotes, }) => {
   const changeColor = (event) => {
    setNotes(noteColor: event.target.value);
   }
