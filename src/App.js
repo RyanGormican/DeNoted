@@ -8,7 +8,7 @@ import NoteHeader from './components/NoteHeader';
 const App = () => {
     
             const date = new Date();
-    const [notes, setNotes] = useState([{ noteId: nanoid(),  noteText:'Welcome to DeNoted!', noteDate:date.toLocaleDateString()}]);
+    const [notes, setNotes] = useState([{ noteId: nanoid(),  noteText:'Welcome to DeNoted!', noteDate:date.toLocaleDateString(), noteColor:"#ffff88"}]);
     const [search, setSearch] = useState(''); 
     var Changed = false;
     if (JSON.parse(localStorage.getItem('denoted-data-darkmode')) === "true")
@@ -43,6 +43,7 @@ const App = () => {
             noteId: nanoid(),
             noteText: note,
             noteDate: date.toLocaleDateString(),
+            noteColor: "#ffff88",
     };
     const newList = [...notes, newNote];
     setNotes(newList);
