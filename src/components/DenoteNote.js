@@ -1,6 +1,6 @@
 const DenoteNote = ({ noteId, noteText, noteDate, noteColor, removetheNote,setNotes, }) => {
   const changeColor = (event) => {
-   setNotes(this.state{noteColor: event.target.value});
+   setNotes(this.state,{noteColor: event.target.value});
   }
   var noteColors = {noteColor};
 
