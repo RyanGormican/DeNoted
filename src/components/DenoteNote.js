@@ -3,7 +3,7 @@ const DenoteNote = ({ noteId, noteText, noteDate, noteColor, removetheNote,setNo
   const updColor = theNotes.map(note => {
     if(note.noteId === {noteId})
        {
-    setNotes(...note,{noteColor: event.target.value});
+    setNotes(...note,noteColor: event.target.value);
        }
   }
   };
