@@ -17,7 +17,7 @@ const DenoteNote = ({ noteId, noteText, noteDate, noteColor, removetheNote,setNo
   var noteColors = {noteColor};
 
   return(
-    <div className='notes' id={noteId} style={{'backgroundColor': noteColors }}>
+    <div className='notes' id={noteId} style={{'backgroundColor': noteColors.noteColor }}>
     <span> {noteText } </span>
     <div className='footnotes'>
       <small> {noteDate} </small>
