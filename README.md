@@ -12,4 +12,4 @@ Components -
 
 . App.js - Processes the commands to add a new note to the list and remove a note from the list. App.js also handles the usage of storage in order to store and retrieve the notes from the local storage.
 
-. SearchNotes.js - ..
+. SearchNotes.js - ...
