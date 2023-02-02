@@ -1,4 +1,4 @@
-[Denoted](https://denoted.vercel.app/) -
+[DeNoted](https://denoted.vercel.app/) -
 
 DeNoted is a notes app developed using React and an assortment of web technologies. Users are able to manage the notes on the page by adding and deleting the notes they want to change. Management of notes also allows the user to change the design of a note by modifying the background color.
 
