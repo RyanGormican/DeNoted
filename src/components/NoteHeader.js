@@ -1,4 +1,6 @@
 import React from 'react';
+import { Icon } from '@iconify/react';
+
 const NoteHeader = ({ toggleDarkMode }) => {
     return (
     <div className='header'>
